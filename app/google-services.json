@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "763956634911",
+    "project_id": "habitsnow-fa317",
+    "storage_bucket": "habitsnow-fa317.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763956634911:android:03bd4afa2b5de6efd17c2a",
+        "android_client_info": {
+          "package_name": "com.example.habitsnow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ71J5kvqgAMfc0VQH2EPCmq3ZeV1UvUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
