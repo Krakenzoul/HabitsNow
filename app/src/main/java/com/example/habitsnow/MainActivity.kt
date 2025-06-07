@@ -12,24 +12,19 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.habitsnow.ui.theme.HabitsNowTheme
+import androidx.compose.material3.MaterialTheme
+import com.example.habitsnow.navigation.AppNavigation
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
-            HabitsNowTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+            MaterialTheme {
+                AppNavigation()  // ⬅️ Aquí inicias toda tu navegación
             }
         }
     }
 }
-
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(

@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.firebase)
 }
 
 android {
@@ -40,7 +41,18 @@ android {
 }
 
 dependencies {
+    // Jetpack Compose
+    implementation("androidx.compose.ui:ui:1.5.1")
+    implementation("androidx.compose.material3:material3:1.1.2")
+    implementation("androidx.activity:activity-compose:1.7.2")
+    implementation ("androidx.navigation:navigation-compose:2.7.7")
 
+    // Navigation Compose
+    implementation("androidx.navigation:navigation-compose:2.7.5")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation(platform("com.google.firebase:firebase-bom:33.15.0"))
+    implementation("com.google.firebase:firebase-auth-ktx")
+    implementation("com.google.firebase:firebase-database-ktx")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
